@@ -2,7 +2,7 @@
   "expo": {
     "name": "WildCommunity",
     "slug": "WildCommunity",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -24,10 +24,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.goodlucklan.WildCommunity"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "56502229-7bb6-4246-94fc-a2a12ecf042d"
+      }
     }
   }
 }
