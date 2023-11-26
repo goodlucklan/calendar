@@ -12,36 +12,24 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Tab.Navigator screenOptions={{
-
-      }}>
-        <Tab.Screen
-          name="Calendar1"
-          component={FirstCalendar}
-          options={{
-            tabBarIcon: () => <FontAwesome5 name="calendar" size={24} color="black" />
-          }}
-        />
-        <Tab.Screen name="Calendar2" component={SecondCalendar} options={{
-          tabBarIcon: () => <FontAwesome5 name="calendar-alt" size={24} color="black" />
-        }} />
-        {/* <WebView
-        style={styles.container}
-        source={{ uri: "https://portalestudiante.utp.edu.pe" }}
-        originWhitelist={['*']}
-        androidLayerType={'hardware'}
-        javaScriptEnabled={true}
-        domStorageEnabled={true}
-        scalesPageToFit={true}
-        scrollEnabled={false}
-        automaticallyAdjustContentInsets={false}
-        startInLoadingState={true}
-        mixedContentMode={'always'}
-        overScrollMode={'never'}
-      /> */}
-      </Tab.Navigator>
-    </NavigationContainer>
+    <WebView
+      style={styles.container}
+      source={{
+        uri: "https://main--remarkable-moonbeam-050b7c.netlify.app",
+      }}
+      originWhitelist={["*"]}
+      androidLayerType={"hardware"}
+      javaScriptEnabled={true}
+      domStorageEnabled={true}
+      allowsLinkPreview
+      useWebView2
+      scalesPageToFit={true}
+      scrollEnabled={false}
+      automaticallyAdjustContentInsets={false}
+      startInLoadingState={true}
+      mixedContentMode={"always"}
+      overScrollMode={"never"}
+    />
   );
 }
 
